@@ -36,6 +36,7 @@ const connectDB = async () => {
 };
 connectDB();
 
+app.use(express.static(path.join(__dirname, "client/build")));
 // middlewares
 app.use(morgan("dev"));
 app.use(bodyParser.json());
