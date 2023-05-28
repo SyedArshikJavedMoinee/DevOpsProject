@@ -12,7 +12,7 @@ services:
     restart: always
 
   server:
-    build: 'mujtabaazizkhan/mern-ecommerce'
+    image: 'mujtabaazizkhan/mern-ecommerce'
     ports:
       - "8000:5000"
     restart: always
